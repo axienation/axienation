@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>bamboo</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./home.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    
+    <script src="contact.js" defer></script>
+    <script src="js/bootstrap.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><i class="fad fa-icons" id="logos"></i> AxirNation</a>
+          <div class="collapse navbar-collapse" id="navbarNav">
+          </div>
+        </div>
+      </nav>
+
+      <!-- Banner -->
+
+      <section class="content-banner">
+        <div class="container">
+          <div class="row d-flex justify-content-center">
+            <div class="col-md-12">
+              <div class="banner-con text-center">
+                <p class="first-title"><i class="fad fa-atom-alt"></i> AxieNation<span class="cursor">&nbsp;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg class="mt-5" id="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#131313" fill-opacity="1" d="M0,64L0,32L180,32L180,128L360,128L360,160L540,160L540,96L720,96L720,192L900,192L900,224L1080,224L1080,32L1260,32L1260,160L1440,160L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"></path></svg>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" style="background-color: #131313;">
+      <div class="container text-light">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center text-light">
+          <div class="col-md-6">
+            <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+              <strong>Thank you!</strong> we just received your staff application. please wait for up to 24h
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <form name="wpu-contact-form">
+              <div class="row mb-4">
+                <div class="col">
+                <label for="email" class="form-label">Minecraft Nick</label>
+                <input type="text" class="form-control" placeholder="Minecraft Nickname" aria-label="First name">
+                </div>
+                <div class="col">
+                <label for="email" class="form-label">Discord Tag</label>
+                <input type="text" class="form-control" placeholder="eg example#0000" aria-label="Last name">
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Do you have a premium account?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Yes</option>
+                  <option value="1">No</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">do you have any previous staff experience?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Yes</option>
+                  <option value="1">No</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">what part of the staff do you want to be?</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>helper ( -3 )</option>
+                  <option value="1">builder ( -1 )</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">give us at least 3 clear reasons why you want to become a staff member in axination</label>
+                <textarea class="form-control cus-form" id="Message" rows="3" name="message" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-dark btn-kirim"><i class="fad fa-paper-plane"></i> Kirim</button>
+
+              <button class="btn btn-danger btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Sending
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg class="mt-5" id="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f1f1f1" fill-opacity="1" d="M0,64L0,32L180,32L180,128L360,128L360,160L540,160L540,96L720,96L720,192L900,192L900,224L1080,224L1080,32L1260,32L1260,160L1440,160L1440,320L1260,320L1260,320L1080,320L1080,320L900,320L900,320L720,320L720,320L540,320L540,320L360,320L360,320L180,320L180,320L0,320L0,320Z"></path></svg>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: #f1f1f1;" class=" text-dark text-center pb-5">
+    <p>Created with <i class="fad fa-heart"></i> by <a href="https://discord.axienation.my.id/" class="text-white fw-bold" style="text-decoration: none; color: #131313 !important;">AxieNation Inc</a></p>
+  </footer>
+</body>
+    
+</html>

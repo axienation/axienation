@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #09C372;
+    color: #ffffff;
+}
+
+body::-webkit-scrollbar {
+    background: #131313;
+    width: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #09C372;
+    border-radius: 10px;
+}
+
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                   │
+* │                     Bootstrap Navigation Bar                      │
+* │                                                                   │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+.navbar {
+    background: #131313 !important;
+    padding: 10px 10px !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 35px;
+}
+
+.navbar-brand i {
+    font-size: 25px;
+    font-weight: 900 !important;
+}a
+
+.navbar-toggler {
+    border: 0 !important;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: 0 !important;
+}
+
+.toggler-icon {
+    width: 30px;
+    height: 3px;
+    background: #e74c3c;
+    display: block;
+    transition: all 0.2s;
+}
+
+#navbarNav > ul > li:nth-child(n) > a {
+    color: #ffffff;
+    opacity: 60%;
+    transition: 0.6s ease;
+    font-family: 'Fredoka One', sans-serif;
+}
+
+#navbarNav > ul > li:nth-child(n) > a:hover {
+    opacity: 80%;
+}
+
+#navbarNav > ul > li:nth-child(1) > a {
+    margin-right: 1rem;
+}
+
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                   │
+* │                       Banner & text Style                         │
+* │                                                                   │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+.content-banner {
+    color: #ffffff;
+    background-image: url(./img/banner.png);
+    min-height: 400px;
+    height: 100%;
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 125px;
+  }
+  
+  .content-banner:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(29, 29, 29, 0.7);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .content-banner .first-title {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 1.2;
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    z-index: 2;
+    margin: 0px 0px 12px;
+    margin-top: 3.5%;
+  }
+
+  #waves {
+    position: relative;
+    z-index: 10;
+}
+
+.cursor {
+    display: inline-block;
+    width: 3px;
+    background: #ccc;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+
+.typing {
+    animation: none;
+}
+
+@keyframes blink {
+    0% { background-color: #ccc; }
+    49% { background-color: #ccc; }
+    50% { background-color: transparent; }
+    99% { background-color: transparent; }
+    100% { background-color: #ccc; }
+}
+
+@media only screen and (max-width: 600px) {
+    #waves {
+        margin-top: 114px !important;
+    }
+	
+	#navbarNav > ul > li:nth-child(2) > a {
+     margin-left: 1px;
+ }
+}
+
+/*
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+* │                                                                   │
+* │                         Contact Form CSS                          │
+* │                                                                   │
+*  ⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+*/
+
+.contact {
+    background-color: #131313 !important;
+}
+
+input,
+textarea {
+    border: 0 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
