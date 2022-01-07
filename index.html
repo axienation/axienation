@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
-          <a class="navbar-brand" href="#"><i class="fad fa-icons" id="logos"></i> AxirNation</a>
+          <a class="navbar-brand" href="#"><i class="fad fa-icons" id="logos"></i> AxieNation</a>
           <div class="collapse navbar-collapse" id="navbarNav">
           </div>
         </div>
@@ -54,41 +54,45 @@
               <strong>Thank you!</strong> we just received your staff application. please wait for up to 24h
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form name="wpu-contact-form">
+            <form name="contact">
               <div class="row mb-4">
                 <div class="col">
                 <label for="email" class="form-label">Minecraft Nick</label>
-                <input type="text" class="form-control" placeholder="Minecraft Nickname" aria-label="First name">
+                <input type="text" class="form-control" placeholder="Minecraft Nickname" name="nick" aria-label="First name">
                 </div>
                 <div class="col">
                 <label for="email" class="form-label">Discord Tag</label>
-                <input type="text" class="form-control" placeholder="eg example#0000" aria-label="Last name">
+                <input type="text" class="form-control" placeholder="eg. example#0000" name="discord" aria-label="Last name">
                 </div>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">Do you have a premium account?</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Yes</option>
-                  <option value="1">No</option>
+                <select class="form-select" aria-label="Default select example" name="account">
+                  <option selected>Choose</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">do you have any previous staff experience?</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Yes</option>
-                  <option value="1">No</option>
+                <select class="form-select" aria-label="Default select example" name="exp">
+                  <option selected>Choose</option>>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
                 </select>
               </div>
               <div class="mb-3">
                 <label for="email" class="form-label">what part of the staff do you want to be?</label>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>helper ( -3 )</option>
-                  <option value="1">builder ( -1 )</option>
+                <select class="form-select" aria-label="Default select example" name="part">
+                  <option selected>Choose</option>>
+                  <option value="helper">Helper</option>
+                  <option value="builder" disabled>Builder / Closed</option>
+                  <option value="developer" disabled>Developer / Closed</option>
                 </select>
               </div>
               <div class="mb-3">
                 <label for="pesan" class="form-label">give us at least 3 clear reasons why you want to become a staff member in axination</label>
-                <textarea class="form-control cus-form" id="Message" rows="3" name="message" required></textarea>
+                <textarea class="form-control cus-form" id="Message" rows="3" name="reason" required></textarea>
               </div>
               <button type="submit" class="btn btn-dark btn-kirim"><i class="fad fa-paper-plane"></i> Kirim</button>
 
